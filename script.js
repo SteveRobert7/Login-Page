@@ -63,6 +63,6 @@ function validateForm() {
             window.location.href = window.location.href;
         }
     } else {
-        alert('Please correct the errors before submitting.');
+        alert('Please fill all the required fields correctly');
     }
 }
