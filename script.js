@@ -47,17 +47,17 @@ function checkAllGoodToGo() {
 function validateForm() {
     var emailError = document.getElementById('emailError');
     var passwordError = document.getElementById('passwordError');
+    var email = document.getElementById('email')
+    var pass = document.getElementById('password')
 
-    if (emailError.textContent === '' && passwordError.textContent === '') {
+    if (emailError.textContent === '' && passwordError.textContent === '' && email.value!='' && pass.value != '' ) {
         var confirmation = confirm('Confirm to sign up?');
 
         if (confirmation) {
             alert('Successful signup!');
         } else {
-            debugger
-            var email = document.getElementById('email')
+            
             email.value = '';
-            var pass = document.getElementById('password')
             pass.value = '';
 
             window.location.href = window.location.href;
